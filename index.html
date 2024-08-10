@@ -28,11 +28,30 @@
       font-weight: bolder;
       border-radius: 20px;
     }
+    .marquee {
+      background-color: yellow;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .marquee span {
+      display: inline-block;
+      color: red;
+      padding-left: 100%;
+      animation: scroll 5s linear infinite;
+    }
+    @keyframes scroll {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
   </style>
 </head>
 
 <body >
   <h2>Sito per comprare mister beast</h2>
+  <div class="marquee">
+    <span>Offerta! Offerta! Offerta! Offerta! Offerta! Offerta!</span>
+  </div>
   <img src=RLplF55e_400x400.jpg>
   
   <p><b>Riproduzione di Mr. Beast a grandezza naturale in vera pelle</b></p> 
